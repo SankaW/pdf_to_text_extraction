@@ -15,13 +15,14 @@ def preprocess_image(image_path):
     return image
 
 # Replace the path below with the path to the image you want to process
-image_path = 'images/page_1.png'
+image_path = 'images/2022_ChildProtectionCases_district.png'
 
 # Preprocess the image
 image = preprocess_image(image_path)
 
 # Use pytesseract to do OCR on the image
 # Specify the Tesseract options
+#custom_config = r'--oem 3 --psm 6 --user-words user_words.txt'
 custom_config = r'--oem 3 --psm 6'
 text = pytesseract.image_to_string(image, config=custom_config)
 
