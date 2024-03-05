@@ -16,6 +16,8 @@ def preprocess_image(image_path):
 
 # Replace the path below with the path to the image you want to process
 image_path = 'images/2022_ChildProtectionCases_district.png'
+#year = 2022
+#image_path = f'C:\Educational\Sri Lanka Data\childprotection.gov.lk\child_protection_data\data\Images\District_wise\{year}.png'
 
 # Preprocess the image
 image = preprocess_image(image_path)
